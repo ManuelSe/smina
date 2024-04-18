@@ -1,7 +1,7 @@
 # Smina Fork
 
 
-This is a private fork of smina. The only modification is that here, all explicit hydrogen atoms are retained while they are removed in the original code.
+This is a private fork of smina. The only modification is that here, all explicit hydrogen atoms are retained while they are removed in the original code. The original code was cloned from `http://git.code.sf.net/p/smina/code`.
 
  --- 
 
