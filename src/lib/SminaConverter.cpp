@@ -92,7 +92,7 @@ unsigned convertParsing(OBMol& mol, parsing_struct& p, context& c, int rootatom,
 	mol.PerceiveBondOrders();
 	mol.SetAromaticPerceived();
 	mol.SetAutomaticFormalCharge(false);
-	DeleteHydrogens(mol); //leaves just polars
+	// DeleteHydrogens(mol); //leaves just polars
 
 	vector<vector<int> > rigid_fragments; //the vector of all the rigid molecule fragments, using atom indexes
 	map<unsigned int, obbranch> tree;
