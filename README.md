@@ -3,6 +3,35 @@
 
 This is a private fork of smina. The only modification is that here, all explicit hydrogen atoms are retained while they are removed in the original code. The original code was cloned from `http://git.code.sf.net/p/smina/code`.
 
+To build smina from source, follow these steps:
+1) Install dependencies:
+```bash
+sudo apt install libeigen3-dev cmake libboost-dev swig libxml2-dev libboost-all-dev
+```
+2) Install openbabel if not already done:
+```bash
+git clone https://github.com/openbabel/openbabel.git
+cd openbabel
+mkdir build
+cd build
+cmake .. -DRUN_SWIG=1  -DWITH_MAEPARSER=1
+make -j4
+sudo make install
+```
+3) Build smina from source:
+```bash
+git clone https://github.com/ManuelSe/smina.git
+cd smina
+mkdir build
+cd build
+cmake ..
+make -j4
+```
+4) Optional: copy smina executable to `/usr/bin/` to make it available to all users:
+```bash
+sudo cp smina /usr/bin/
+```
+
  --- 
 
 smina is a fork of Autodock Vina (http://vina.scripps.edu/) that 
