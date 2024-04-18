@@ -1,6 +1,8 @@
 # Smina Fork
 
+
 This is a private fork of smina. The only modification is that here, all explicit hydrogen atoms are retained while they are removed in the original code.
+
  --- 
 
 smina is a fork of Autodock Vina (http://vina.scripps.edu/) that 
