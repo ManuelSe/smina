@@ -907,7 +907,7 @@ Thank you!\n";
 		bool gpu_on = false;
 		bool print_terms = false;
 		bool print_atom_types = false;
-		bool add_hydrogens = true;
+		bool add_hydrogens = false;
 		bool no_lig = false;
 
 		user_settings settings;
@@ -1017,7 +1017,7 @@ Thank you!\n";
 				"rmsd value used to filter final poses to remove redundancy")
 		("quiet,q", bool_switch(&quiet), "Suppress output messages")
 		("addH", value<bool>(&add_hydrogens),
-				"automatically add hydrogens in ligands (on by default)")
+				"automatically add hydrogens in ligands (false by default)")
 			#ifdef SMINA_GPU
 				("device", value<int>(&device)->default_value(0), "GPU device to use")
 				("gpu", bool_switch(&gpu_on), "Turn on GPU acceleration")
